@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  yarn: true
+  npm: true
+  directories:
+  - node_modules
+before_script:
+  - echo "Building the project…"
+  - yarn global add gatsby
+  - yarn install
+  - echo "Done building."
+script:
+  - yarn test
