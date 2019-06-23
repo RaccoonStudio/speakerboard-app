@@ -62,7 +62,7 @@ export const getCurrentUser = () => isBrowser && getUser()
 export const logout = () => {
   if (!isBrowser) return
 
-  navigate(`/`)
+  navigate(`/logout`)
   setUser({})
   localStorage.setItem("isLoggedIn", false)
   auth.logout()
