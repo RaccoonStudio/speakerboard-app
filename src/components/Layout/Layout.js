@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 
+import FontSystem from "../FontSystem"
 import Header from "../Header"
 
 const StyledContainer = styled.main``
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <FontSystem />
       <Header siteTitle={data.site.siteMetadata.title} />
       <StyledContainer>{children}</StyledContainer>
       <footer>
