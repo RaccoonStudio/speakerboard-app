@@ -1,6 +1,14 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
+import WebFont from "webfontloader"
+
 import { Colors, Typography } from "../../styles"
+
+const WebFontConfig = {
+  google: {
+    families: ["Work+Sans:300,400,600"],
+  },
+}
 
 const FontFaces = createGlobalStyle``
 
@@ -11,6 +19,7 @@ const FontStyles = createGlobalStyle`
 
   body {
     color: ${Colors.blue.b900};
+    font-family: ${Typography.stacks.copy};
     font-size: ${Typography.sizes.copy};
     font-weight: ${Typography.weights.regular};
     line-height: ${Typography.lineHeights.comfortable};
@@ -30,11 +39,15 @@ const FontStyles = createGlobalStyle`
   }
 `
 
-const FontSystem = () => (
-  <>
-    <FontFaces />
-    <FontStyles />
-  </>
-)
+const FontSystem = () => {
+  WebFont.load(WebFontConfig)
+
+  return (
+    <>
+      <FontFaces />
+      <FontStyles />
+    </>
+  )
+}
 
 export default FontSystem
