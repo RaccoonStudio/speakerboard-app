@@ -2,7 +2,7 @@ import React from "react"
 import { Router } from "@reach/router"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import PrivateRoute from "../components/PrivateRoute"
 import { login, isLoggedIn, getCurrentUser, logout } from "../utils/auth"
 
