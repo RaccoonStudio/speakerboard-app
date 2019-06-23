@@ -51,7 +51,7 @@ const setSession = (cb = () => {}) => (err, authResult) => {
     tokens.expiresAt = expiresAt
     user = authResult.idTokenPayload
     localStorage.setItem("isLoggedIn", true)
-    navigate("/account")
+    navigate("/account/")
     cb()
   }
 }
@@ -66,4 +66,10 @@ export const handleAuthentication = () => {
 
 export const getProfile = () => {
   return user
+}
+
+export const silentAuth = callback => {
+  if (!isAuthenticated()) return callback()
+
+  auth.checkSession({}, setSession(callback))
 }
