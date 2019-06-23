@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "@speakerboard/app",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Speakerboard is a dashboard for speakers to manage their talk proposals and appearances.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Damien Senger <damien@raccoon.studio>",
   "dependencies": {
     "gatsby": "^2.10.0",
     "gatsby-image": "^2.2.1",
@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/RaccoonStudio/speakerboard-app"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/RaccoonStudio/speakerboard-app/issues"
   }
 }
