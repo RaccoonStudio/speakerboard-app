@@ -7,7 +7,12 @@ import PrivateRoute from "../components/PrivateRoute"
 import { login, isLoggedIn, getCurrentUser, logout } from "../utils/auth"
 
 const Home = ({ user }) => {
-  return <p>Hi, {user.name ? user.name : "fella"}!</p>
+  return (
+    <p>
+      Hi, {user.email ? user.email : "fella"}
+      {console.log(user)}!
+    </p>
+  )
 }
 const Settings = () => <p>Settings</p>
 
