@@ -6,7 +6,7 @@
   "author": "Damien Senger <damien@raccoon.studio>",
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "auth0-js": "^9.11.0",
+    "auth0-js": "^9.11.1",
     "gatsby": "^2.10.5",
     "gatsby-image": "^2.2.1",
     "gatsby-plugin-manifest": "^2.2.0",
